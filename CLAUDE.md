@@ -65,19 +65,20 @@ trackify/
 
 ## Current Features (Completed)
 
-### ✅ Basic UI Structure
-- Responsive layout with Tailwind CSS
-- Gradient header with "Trackify" branding
-- Three gamification stat cards (Streak, Level, XP)
-- Quick action buttons (Add Expense, Set Budget)
-- Glass morphism effect on cards (backdrop-blur)
-
-### ✅ Visual Design
-- Animated gradient background (purple, pink, blue orbs)
-- Gradient text effects
-- Hover animations on buttons (scale + gradient shift)
-- Dark mode support via Tailwind dark: variants
-- Responsive grid layout (1 col mobile, 3 cols desktop)
+### ✅ Apple-Inspired UI Design
+- **Hero Layout**: Full-screen centered hero with generous vertical spacing
+- **Custom Cursor**: Animated cat emoji (🐱) that follows mouse with subtle bounce
+- **Typography**: Large-scale minimal text (8xl/9xl) with gradient effects
+- **Floating Stats**: Three stat elements with staggered floating animations
+  - Streak (🔥): Orange to red gradient
+  - Level (⭐): Yellow to orange gradient
+  - XP (💎): Blue to purple gradient
+- **Interactive Elements**: Hover effects with scale transforms (110%) and emoji growth (125%)
+- **Action Buttons**: Apple-style rounded pills with gradient backgrounds and arrow animations
+- **Background**: Subtle layered gradients with mesh overlay and 25s float animation
+- **Animations**: Fade-in, fade-in-up, gradient shift, float, and bounce effects
+- **Responsive**: Mobile-first design with column stacking on small screens
+- **Dark Mode**: Full dark mode support with adjusted color palettes
 
 ### ✅ Development Infrastructure
 - TypeScript configuration with strict mode
@@ -161,6 +162,22 @@ interface Budget {
 ### Bug Fixes & Improvements
 - `09f2615` - Fix layout issues by removing conflicting App.css styles
 - `eff52b8` - Replace canvas background with CSS gradient animation for better browser compatibility
+
+### Documentation
+- `34f44df` - Add comprehensive CLAUDE.md documentation for project context
+
+### Major UI Redesign (Apple-Inspired)
+- `12d4339` - Redesign UI with Apple-inspired aesthetic and custom cat cursor
+  - **Removed**: Boxy cards with borders and shadows
+  - **Added**: Flowing hero layout with generous spacing
+  - **Added**: Custom animated cat emoji cursor (🐱) that follows mouse movement
+  - **Added**: Floating stat elements with staggered animations (3s float cycle)
+  - **Added**: Gradient text animations on main title (3s cycle)
+  - **Added**: Smooth hover effects with scale transforms
+  - **Added**: Apple-style rounded pill buttons with arrow animations
+  - **Updated**: Subtle mesh gradient background overlay
+  - **Updated**: Large, minimal typography (8xl/9xl titles)
+  - **Design Philosophy**: Minimalist, spacious, elegant - inspired by Apple.com
 
 ## Next Steps (Priority Order)
 
@@ -288,5 +305,5 @@ npm run preview          # Preview built app locally
 ---
 
 **Last Updated**: 2025-11-19
-**Status**: Initial MVP structure complete, ready for feature development
-**Next Session**: Implement expense entry form and data persistence
+**Status**: Apple-inspired UI redesign complete with custom cat cursor and flowing animations
+**Next Session**: Implement expense entry form and data persistence, continue building gamification features
