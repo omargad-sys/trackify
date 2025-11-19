@@ -13,9 +13,9 @@ function App() {
     <div className="min-h-screen relative overflow-hidden" onMouseMove={handleMouseMove}>
       <OrbBackground />
 
-      {/* Custom Cat Cursor */}
+      {/* Custom Cat Cursor - Desktop only */}
       <div
-        className="fixed pointer-events-none z-50 transition-transform duration-100 ease-out"
+        className="hidden md:block fixed pointer-events-none z-50 transition-transform duration-100 ease-out"
         style={{
           left: `${mousePosition.x}px`,
           top: `${mousePosition.y}px`,
@@ -135,8 +135,10 @@ function App() {
           animation: fade-in-up 1s ease-out 0.3s backwards;
         }
 
-        * {
-          cursor: none !important;
+        @media (min-width: 768px) {
+          * {
+            cursor: none !important;
+          }
         }
       `}</style>
     </div>
